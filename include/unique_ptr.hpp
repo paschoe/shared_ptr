@@ -18,6 +18,8 @@
 #include <cassert>
 #define SHARED_ASSERT(x)    assert(x)
 
+namespace BAMHAL {
+
 
 /**
  * @brief fake implementation to use in place of a C++11 std::move() when compiling on an older compiler.
@@ -180,3 +182,5 @@ template<class T, class U> inline bool operator>(const unique_ptr<T>& l, const u
     return (l.get() > r.get());
 }
 
+
+}
