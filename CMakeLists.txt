@@ -64,7 +64,7 @@ include_directories("${PROJECT_SOURCE_DIR}/include")
 
 # Optional additional targets:
 
-option(SHARED_PTR_BUILD_EXAMPLES "Build examples." ON)
+option(SHARED_PTR_BUILD_EXAMPLES "Build examples." OFF)
 if (SHARED_PTR_BUILD_EXAMPLES)
     # add the basic example executable
     add_executable(shared_ptr_example1 ${SHARED_PTR_EXAMPLES} ${SHARED_PTR_INC})
@@ -72,7 +72,7 @@ else(SHARED_PTR_BUILD_EXAMPLES)
     message(STATUS "SHARED_PTR_BUILD_EXAMPLES OFF")
 endif(SHARED_PTR_BUILD_EXAMPLES)
 
-option(SHARED_PTR_BUILD_TESTS "Build and run tests." ON)
+option(SHARED_PTR_BUILD_TESTS "Build and run tests." OFF)
 if (SHARED_PTR_BUILD_TESTS)
     # add the subdirectory containing the CMakeLists.txt for the gtest library
     if (NOT MSVC)
