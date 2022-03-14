@@ -137,6 +137,13 @@ public:
         return px;
     }
 
+    template<typename _Tp1>
+    operator unique_ptr<_Tp1>() throw() {
+        element_type* __tmp = px;
+        px = NULL;
+        return unique_ptr<_Tp1>(__tmp);
+    }
+
 private:
     /// @brief release the ownership of the px pointer and destroy the object
     inline void destroy(void) throw() // never throws
