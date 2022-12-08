@@ -15,7 +15,7 @@
 // can be replaced by other error mechanism
 #include <cassert>
 #define SHARED_ASSERT(x)    assert(x)
-namespace BAMHAL{
+namespace ROMBAUTS {
 
 /**
  * @brief implementation of reference counter for the following minimal smart pointer.

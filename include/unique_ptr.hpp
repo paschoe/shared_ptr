@@ -18,7 +18,7 @@
 #include <cassert>
 #define SHARED_ASSERT(x)    assert(x)
 
-namespace BAMHAL {
+namespace ROMBAUTS {
 
 
 /**
